@@ -26,11 +26,11 @@ async function mapImageList() {
     },
     {
       name: "funny-cat1",
-      path: "src/img/funny-cat1.jpg",
+      path: "src/img/funny-cat1.png",
     },
     {
       name: "funny-cat2",
-      path: "src/img/funny-cat2.jpg",
+      path: "src/img/funny-cat2.png",
     },
   ];
   return memesObject;
