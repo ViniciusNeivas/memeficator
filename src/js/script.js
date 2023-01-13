@@ -1,5 +1,3 @@
-
-
 function enablePhotoUpload() {
   const imageInput = document.getElementById("image-input");
   imageInput.addEventListener("change", function() {
@@ -32,6 +30,12 @@ async function mapImageList() {
       name: "funny-cat2",
       path: "src/img/funny-cat2.png",
     },
+    
+    {
+      name: "brasil-sem-jovens",
+      path: "src/img/um-brasil-sem-jovens.jpg",
+    },
+
   ];
   return memesObject;
 }
