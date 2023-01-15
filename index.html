@@ -48,26 +48,8 @@
                     Bora Download
                 </button>
             </section>
-
-
         </section>
     </section>
-    <!-- <script src="./src/js/script.js"></script>
-    <script src="./src/js/html2Canvas.js"></script> -->
-    <script>
-        document.getElementById("btn-download").onclick = () => {
-            const screenshotPrint = document.querySelector("#downloaded")
-
-            html2canvas(screenshotPrint).then((canvas) => {
-                const base64Image = canvas.toDataURL("image/png")
-                let anchor = document.createElement("a")
-                anchor.setAttribute("href", base64Image)
-                anchor.setAttribute("download", "my-meme.png")
-                anchor.click()
-                anchor.remove()
-            })
-        }
-    </script>
 </body>
 
 </html>

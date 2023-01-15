@@ -55,6 +55,20 @@ async function changeMemePicture(photo) {
   displayImage.style.backgroundImage = `url('${photo}')`;
 }
 
+let btnDownload = document.getElementById("btn-download");
+btnDownload.onclick = function captureToDownload (){
+  const screenshotPrint = document.querySelector("#downloaded")
+
+  html2canvas(screenshotPrint).then((canvas) => {
+      const base64Image = canvas.toDataURL("image/png")
+      let anchor = document.createElement("a")
+      anchor.setAttribute("href", base64Image)
+      anchor.setAttribute("download", "my-meme.png")
+      anchor.click()
+      anchor.remove()
+  })
+}
+
 async function main() {
   const memesImageList = await mapImageList();
   enablePhotoUpload();
